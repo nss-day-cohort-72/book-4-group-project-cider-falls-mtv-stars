@@ -1,6 +1,7 @@
 //import the HTML display functions to plug into the template literals
 import { servicesList } from "./services.js"
 import { displayAreas } from "./areas.js"
+import { guestList } from "./guests.js"
 
 
 const mainContainer = document.querySelector("#container")
@@ -16,6 +17,7 @@ const applicationHTML = `
     </section>
     <section class="guest-container">
         <h2>Guest List</h2>
+        ${guestList()}
     </section>
 `
 
