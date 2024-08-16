@@ -11,14 +11,14 @@ areas : [
 
 guests : [
     { id: 1, name: 'John Doe', areaID: 1, service: 'Rock Climbing' },
-    { id: 2, name: 'Jane Smith', areaID: 3, service: 'Hiking' },
-    { id: 3, name: 'Michael Johnson', areaID: 5, service: 'Fishing' },
-    { id: 4, name: 'Emily Davis', areaID: 2, service: 'Picnicking' },
-    { id: 5, name: 'Chris Brown', areaID: 6, service: 'Information' },
-    { id: 6, name: 'Jessica Wilson', areaID: 4, service: 'Lodging' },
-    { id: 7, name: 'David Taylor', areaID: 1, service: 'Parking' },
+    { id: 2, name: 'Jane Smith', areaID: 1, service: 'Hiking' },
+    { id: 3, name: 'Michael Johnson', areaID: 2, service: 'Fishing' },
+    { id: 4, name: 'Emily Davis', areaID: 4, service: 'Picnicking' },
+    { id: 5, name: 'Chris Brown', areaID: 2, service: 'Information' },
+    { id: 6, name: 'Jessica Wilson', areaID: 1, service: 'Lodging' },
+    { id: 7, name: 'David Taylor', areaID: 2, service: 'Parking' },
     { id: 8, name: 'Sarah Miller', areaID: 3, service: 'Zip Lining' },
-    { id: 9, name: 'James Anderson', areaID: 2, service: 'Canoeing' },
+    { id: 9, name: 'James Anderson', areaID: 3, service: 'Canoeing' },
     { id: 10, name: 'Laura Thomas', areaID: 5, service: 'Rafting' },
     { id: 11, name: 'Daniel Lee', areaID: 6, service: 'Hiking' },
     { id: 12, name: 'Sophia Harris', areaID: 4, service: 'Fishing' }
