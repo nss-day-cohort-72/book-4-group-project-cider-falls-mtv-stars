@@ -1,8 +1,9 @@
+
 #container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 1500px;
+    width: 1200px;
 }
 
 .areas-container {
@@ -14,6 +15,7 @@
     border-radius: 10px;
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
     margin: 10px;
+    margin-left: 5rem;
 }
 .areas-container h2 {
     text-align: center;
@@ -57,14 +59,8 @@
     background-color: rgb(185, 185, 185);
     border-radius: 10px;
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
-    margin-left: auto;
-    margin-top: 0;
-    position: absolute;
-    top: 200px;
-    right: 200px;
     padding: 20px;
     margin: 10px;
-    place-self: center;
     position: relative;
     bottom: 200px;
     left: 100px;
@@ -87,7 +83,6 @@
     text-align: center;
     font-size: 50px;
     border: 6px ridge cadetblue;
-    width: 1500px;
 }
 
 .footer {
@@ -108,6 +103,7 @@
     border-radius: 10px;
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
     margin: 10px;
+    margin-left: 5rem;
 }
 
 .services-container h2 {
