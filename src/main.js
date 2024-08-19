@@ -15,7 +15,7 @@ const applicationHTML = `
         <h2>Areas</h2>
         ${displayAreas()}
     </section>
-    <section class="guest-container">
+    <section class="guests-container">
         <h2>Guest List</h2>
         ${guestList()}
     </section>

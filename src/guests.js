@@ -1,4 +1,4 @@
-import { getGuests } from "./database";
+import { getGuests } from "./database.js";
 
 const guests = getGuests()
 
