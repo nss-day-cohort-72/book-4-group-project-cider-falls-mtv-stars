@@ -1,0 +1,11 @@
+.guest-container {
+    text-align: right;
+    margin-right: 0;
+    margin-left: auto;
+    padding: 10px;
+    width: fit-content; /* Ensures the container only takes up necessary space */
+  }
+  
+  h2 {
+    margin: 0; /* Removes any default margin from the heading */
+  }
