@@ -1,12 +1,12 @@
 const database = {
 
 areas : [
-    { id: 1, name: 'Chamfort River', services: 'rafting, canoeing, and fishing' },
-    { id: 2, name: 'Lost Wolf Hiking Trail', services: 'hiking, picnicking, and rock climbing' },
-    { id: 3, name: 'Lodge', services: 'lodging, parking, information, and picnicking'},
-    { id: 4, name: 'Gander River', services: 'fishing and hiking' },
-    { id: 5, name: 'Campgrounds', services: 'information, lodging, and parking' },
-    { id: 6, name: 'Pine Bluffs Trails', services: 'hiking, picnicking, and zip lines' }
+    { id: 1, name: 'Chamfort River', services: 'rafting, canoeing, fishing' },
+    { id: 2, name: 'Lost Wolf Hiking Trail', services: 'hiking, picnicking, rock climbing' },
+    { id: 3, name: 'Lodge', services: 'lodging, parking, information, picnicking'},
+    { id: 4, name: 'Gander River', services: 'fishing, hiking' },
+    { id: 5, name: 'Campgrounds', services: 'information, lodging, parking' },
+    { id: 6, name: 'Pine Bluffs Trails', services: 'hiking, picnicking, zip lines' }
   ],
 
 guests : [
@@ -25,16 +25,16 @@ guests : [
   ],
 
 services : [
-    { id: 1, service: 'Rock Climbing' },
-    { id: 2, service: 'Hiking' },
-    { id: 3, service: 'Fishing' },
-    { id: 4, service: 'Picnicking' },
-    { id: 5, service: 'Information' },
-    { id: 6, service: 'Lodging' },
-    { id: 7, service: 'Parking' },
-    { id: 8, service: 'Zip Lining' },
-    { id: 9, service: 'Canoeing' },
-    { id: 10, service: 'Rafting' }
+    { id: 1, service: 'Rock Climbing', serviceAreas: "Lost Wolf Hiking Trail" },
+    { id: 2, service: 'Hiking', serviceAreas: "Lost Wolf Hiking Trail, Gander River, Pine Bluffs Trails" },
+    { id: 3, service: 'Fishing', serviceAreas: "Chamfort River, Gander River" },
+    { id: 4, service: 'Picnicking', serviceAreas: "Lost Wolf Hiking Trail, Lodge, Pine Bluffs Trails " },
+    { id: 5, service: 'Information', serviceAreas: "Lodge, Campgrounds" },
+    { id: 6, service: 'Lodging', serviceAreas: "Lodge, Campgrounds" },
+    { id: 7, service: 'Parking', serviceAreas: "Lodge, Campgrounds" },
+    { id: 8, service: 'Zip Lining', serviceAreas: "Pine Bluffs Trails" },
+    { id: 9, service: 'Canoeing', serviceAreas: "Chamfort River" },
+    { id: 10, service: 'Rafting', serviceAreas: "Chamfort River" }
   ]
 
 }
