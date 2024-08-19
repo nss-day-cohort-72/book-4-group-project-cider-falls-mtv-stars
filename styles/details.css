@@ -1,6 +1,8 @@
 #container {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 1500px;
 }
 /* .services-container {
     border: 2px solid red;
@@ -59,9 +61,9 @@
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
     margin-left: auto;
     margin-top: 0;
-    position: absolute;
-    top: 200px;
+    position: relative;
     right: 200px;
+    bottom: 200px;
     padding: 20px;
 }
 
