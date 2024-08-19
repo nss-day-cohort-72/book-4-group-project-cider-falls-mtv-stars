@@ -1,13 +1,13 @@
 #container {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .areas-container {
     display: flex;
     flex-direction: column;
-    max-width: 800px;
-    width: 800px;
+    width: 700px;
     border: 8px solid rgba(141, 74, 32, 0.63);
     background-color: rgb(185, 185, 185);
     border-radius: 10px;
@@ -49,18 +49,13 @@
 }
 
 .guests-container {
-     display: flex;
+    display: flex;
     flex-direction: column;
-    max-width: 800px;
+    max-width: 200px;
     border: 8px solid rgba(141, 74, 32, 0.63);
     background-color: rgb(185, 185, 185);
     border-radius: 10px;
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
-    margin-left: auto;
-    margin-top: 0;
-    position: absolute;
-    top: 200px;
-    right: 200px;
     padding: 20px;
 }
 
