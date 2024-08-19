@@ -57,6 +57,11 @@
     background-color: rgb(185, 185, 185);
     border-radius: 10px;
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+    margin-left: auto;
+    margin-top: 0;
+    position: absolute;
+    top: 200px;
+    right: 200px;
     padding: 20px;
     margin: 10px;
     place-self: center;
