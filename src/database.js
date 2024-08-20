@@ -23,7 +23,6 @@ guests : [
     { id: 11, name: 'Daniel Lee', areaID: 6, service: 'Hiking' },
     { id: 12, name: 'Sophia Harris', areaID: 4, service: 'Fishing' }
   ],
-
 services : [
     { id: 1, service: 'Rock Climbing', serviceAreas: "Lost Wolf Hiking Trail" },
     { id: 2, service: 'Hiking', serviceAreas: "Lost Wolf Hiking Trail, Gander River, Pine Bluffs Trails" },
@@ -35,6 +34,26 @@ services : [
     { id: 8, service: 'Zip Lining', serviceAreas: "Pine Bluffs Trails" },
     { id: 9, service: 'Canoeing', serviceAreas: "Chamfort River" },
     { id: 10, service: 'Rafting', serviceAreas: "Chamfort River" }
+  ],
+  services_areas: [
+    { id: 1, servicesId: 1, areasId: 2 },
+    { id: 2, servicesId: 2, areasId: 2 },
+    { id: 3, servicesId: 2, areasId: 4 },
+    { id: 4, servicesId: 2, areasId: 6 },
+    { id: 5, servicesId: 3, areasId: 1 },
+    { id: 6, servicesId: 3, areasId: 4 },
+    { id: 7, servicesId: 4, areasId: 2 },
+    { id: 8, servicesId: 4, areasId: 3 },
+    { id: 9, servicesId: 4, areasId: 6 },
+    { id: 10, servicesId: 5, areasId: 3 },
+    { id: 11, servicesId: 5, areasId: 5 },
+    { id: 12, servicesId: 6, areasId: 3 },
+    { id: 13, servicesId: 6, areasId: 5 },
+    { id: 14, servicesId: 7, areasId: 3 },
+    { id: 15, servicesId: 7, areasId: 5 },
+    { id: 16, servicesId: 8, areasId: 6 },
+    { id: 17, servicesId: 9, areasId: 1 },
+    { id: 18, servicesId: 10, areasId: 1 },
   ]
 
 }
@@ -49,4 +68,8 @@ export const getGuests = () => {
 
 export const getServices = () => {
     return database.services.map(services => ({...services}))
+}
+
+export const getServicesAreasBridge = () => {
+  return database.services_areas.map(item => ({...item}))
 }

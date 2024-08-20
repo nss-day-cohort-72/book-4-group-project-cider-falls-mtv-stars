@@ -1,36 +1,43 @@
 import { getServices } from "./database.js"
+import { getAreas } from "./database.js"
+import { getServicesAreasBridge } from "./database.js"
 
 const services = getServices()
-
-
-// const findCelebrityMatch = (kidObject, celebrityArray) => {
-//     let celebrityMatch = null
-
-//     for (const celebrity of celebrityArray) {
-//       if(celebrity.id === kidObject.celebrityId ){
-//         celebrityMatch = celebrity
-//       }
-//     }
-//     return celebrityMatch
-// }
-
-// const findAreaMatch = (service, allAreas) => {
-//     let findArea = null
-//     for (const area of allAreas) {
-//         if(area.id === service.id) {
-//             findArea = area
-//         }
-        
-//     }
-//     return findArea
-// }
+const areas = getAreas()
+const servicesOfferedAtAreas = getServicesAreasBridge()
 
 document.addEventListener(
     "click",
     (clickEvt) => {
         const clickTarget = clickEvt.target
-        if(clickTarget.dataset.type === "services") {
-            alert(`${clickTarget.dataset.name}  is available in  ${clickTarget.dataset.serviceareas}`)
+        if (clickTarget.dataset.type === "services") {
+            let servicedAreas = []
+            for (const service of servicesOfferedAtAreas) {
+                if (service.servicesId === parseInt(clickTarget.dataset.id)) {
+                    for (const area of areas) {
+                        if (area.id === service.areasId) {
+                            servicedAreas.push(area.name)
+                        }
+                    }
+                }
+            }
+            let sentence = ''
+            for (const area of servicedAreas) {
+                if (servicedAreas.length === 1) {
+                    sentence += area
+                } else if (servicedAreas.length === 2) {
+                   if (servicedAreas.indexOf(area) === servicedAreas.length - 1) {
+                    sentence += ` and ${area}`
+                   } else {
+                    sentence += area
+                   }
+                } else if (servicedAreas.indexOf(area) == servicedAreas.length - 1) {
+                    sentence += `and ${area}`
+                } else {
+                    sentence += area + ', '
+                }
+            }
+            window.alert(`${clickTarget.dataset.name} is available in ${sentence}.`)
         }
     }
 )
